@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lab 1</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" width="30" height="30">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav nav-pills mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="true">&#9824Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" id="gallery-tab" data-toggle="tab" href="#gallery" role="tab"
+                                aria-controls="gallery" aria-selected="false">&#9827Галерея</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" id="testing-tab" data-toggle="tab" href="#testing" role="tab"
+                                aria-controls="testing" aria-selected="false">&#9829Тестирование</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" id="contacts-tab" data-toggle="tab" href="#contacts"
+                                role="tab" aria-controls="contacts" aria-selected="false">&#9830Контакты</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav  ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link  text-light" data-toggle="modal"
+                                data-target="#exampleModal">Вход</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="tab-content">
+            <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="single-post">
+                                <h3 class="post-category">Front end</h3>
+                                <h2 class="post-title"><a href="#">Bootstrap</a></h2>
+                                <p>Bootstrap (также известен как Twitter Bootstrap) — свободный набор инструментов для
+                                    создания сайтов и веб-приложений. Включает в себя HTML- и CSS-шаблоны оформления для
+                                    типографики, веб-форм, кнопок, меток, блоков навигации и прочих компонентов
+                                    веб-интерфейса, включая JavaScript-расширения.
+                                    Bootstrap использует современные наработки в области CSS и HTML, поэтому необходимо
+                                    быть внимательным при поддержке старых браузеров.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-posts">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <img class="card-img-top embed-responsive-item" src="img/a1.jpg"
+                                            alt="Card image cap">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="post-category">Front end</h3>
+                                        <h5 class="post-title">LESS</h5>
+                                        <p class="card-text">LESS (Leaner Style Sheets, компактная таблица стилей)— это
+                                            динамический язык стилей, который разработал Alexis Sellier. Он создан под
+                                            влиянием языка стилей Sass, и, в свою очередь, оказал влияние на его новый
+                                            синтаксис «SCSS», в котором также использован синтаксис, являющийся
+                                            расширением СSS.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <img class="card-img-top embed-responsive-item" src="img/a2.jpg"
+                                            alt="Card image cap">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="post-category">Back end</h3>
+                                        <h5 class="post-title">C++</h5>
+                                        <p class="card-text">C++ (читается си-плюс-плюс) — компилируемый, статически
+                                            типизированный язык программирования общего назначения. Поддерживает такие
+                                            парадигмы программирования, как процедурное программирование,
+                                            объектно-ориентированное программирование, обобщённое программирование. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <img class="card-img-top embed-responsive-item" src="img/a3.jpg"
+                                            alt="Card image cap">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="post-category">Back end</h3>
+                                        <h5 class="post-title">C#</h5>
+                                        <p class="card-text">C# (произносится си шарп) — объектно-ориентированный язык
+                                            программирования. Разработан в 1998—2001 годах группой инженеров компании
+                                            Microsoft под руководством Андерса Хейлсберга и Скотта Вильтаумота как язык
+                                            разработки приложений для платформы Microsoft .NET Framework.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <img class="card-img-top embed-responsive-item" src="img/a4.jpg"
+                                            alt="Card image cap">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="post-category">Front end</h3>
+                                        <h5 class="post-title">CSS</h5>
+                                        <p class="card-text">CSS — формальный язык описания внешнего вида документа,
+                                            написанного с использованием языка разметки. Преимущественно используется
+                                            как средство описания, оформления внешнего вида веб-страниц, написанных с
+                                            помощью языков разметки HTML и XHTML, но может также применяться к любым
+                                            XML-документам, например, к SVG или XUL.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col text-center after-posts">
+                                <button type="button" class="btn btn-outline-secondary Load-more">
+                                    Load more
+                                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+                    <div class="">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="img/a1.jpg" alt="Первый слайд">
+                            </div>
+                            <div class="carousel-item ">
+                                <img class="d-block w-100" src="img/a2.jpg" alt="Второй слайд">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/a3.jpg" alt="Третий слайд">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane active" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
+                <div class="container page-top">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a href="img/a1.jpg" class="fancybox" rel="ligthbox">
+                                <img src="img/a1.jpg" class="zoom img-fluid " alt="">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a href="img/a2.jpg" class="fancybox" rel="ligthbox">
+                                <img src="img/a2.jpg" class="zoom img-fluid" alt="">
+                            </a>
+                        </div>
+            
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a href="img/a3.jpg" class="fancybox" rel="ligthbox">
+                                <img src="img/a3.jpg" class="zoom img-fluid " alt="">
+                            </a>
+                        </div>
+            
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a href="img/a4.jpg" class="fancybox" rel="ligthbox">
+                                <img src="img/a4.jpg" class="zoom img-fluid " alt="">
+                            </a>
+                        </div>
+            
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a href="img/a5.jpg" class="fancybox" rel="ligthbox">
+                                <img src="img/a5.jpg" class="zoom img-fluid " alt="">
+                            </a>
+                        </div>
+            
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a href="img/a6.jpg" class="fancybox" rel="ligthbox">
+                                <img src="img/a6.jpg" class="zoom img-fluid " alt="">
+                            </a>
+                        </div>
+            
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a href="img/a7.jpg" class="fancybox" rel="ligthbox">
+                                <img src="img/a7.jpg" class="zoom img-fluid " alt="">
+                            </a>
+                        </div>
+            
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a href="img/a8.jpg" class="fancybox" rel="ligthbox">
+                                <img src="img/a8.jpg" class="zoom img-fluid " alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="tab-pane active" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+                <div class="page-top">
+                    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+
+                    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate
+                        to
+                        contact us directly. Our team will come back to you within
+                        a matter of hours to help you.</p>
+
+                    <div class="row">
+
+
+                        <div class="col-md-9 mb-md-0 mb-5">
+                            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+
+                                <div class="row">
+
+
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <input type="text" id="name" name="name" class="form-control">
+                                            <label for="name" class="">Your name</label>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <input type="text" id="email" name="email" class="form-control">
+                                            <label for="email" class="">Your email</label>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-0">
+                                            <input type="text" id="subject" name="subject" class="form-control">
+                                            <label for="subject" class="">Subject</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+
+
+                                    <div class="col-md-12">
+
+                                        <div class="md-form">
+                                            <textarea type="text" id="message" name="message" rows="2"
+                                                class="form-control md-textarea"></textarea>
+                                            <label for="message">Your message</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </form>
+
+                            <div class="text-center text-md-left">
+                                <a class="btn btn-primary"
+                                    onclick="document.getElementById('contact-form').submit();">Send</a>
+                            </div>
+                            <div class="status"></div>
+                        </div>
+
+                        <div class="col-md-3 text-center">
+                            <ul class="list-unstyled mb-0">
+                                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                    <p>San Francisco, CA 94126, USA</p>
+                                </li>
+
+                                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                                    <p>+ 01 234 567 89</p>
+                                </li>
+
+                                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                                    <p>contact@mdbootstrap.com</p>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="testing" role="tabpanel" aria-labelledby="testing-tab">
+
+                <div class="">
+                    <h1 class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, provident.</h1>
+                    <p class="lead">На странице размещена таблица с возможностями разных языков программирования </p>
+                    <hr class="my-4">
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg"
+                            href="https://ru.wikipedia.org/wiki/%D0%A1%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5_%D1%8F%D0%B7%D1%8B%D0%BA%D0%BE%D0%B2_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F"
+                            role="button">Узнать больше</a>
+                    </p>
+                </div>
+                <!-- Columns -->
+                <div class="container border border-primary">
+                    <div class="row border-primary">
+                        <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 mx-auto bg-danger">
+                            <p class="text-secondary text-center"> Столбцы основаны на архитектуре flexbox. Это
+                                означает, что у нас есть опции для изменения отдельных столбцов и изменения групп
+                                столбцов на уровне строк. Вы выбираете как столбцы увеличить, уменьшить или изменить
+                                иным образом.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mr-auto bg-dark-orange">
+                            <p class="text-dark-pink text-lowercase font-weight-bold text-md-right"> При построении
+                                макетов сетки весь контент помещается в столбцы. Иерархия сетки Bootstrap переходит от
+                                контейнера к строке столбца вашего контента. В редких случаях вы можете комбинировать
+                                контент и колонку, но делайте это внимателно.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testing table -->
+                <div class="container page-top">
+                    <div class="row">
+                        <div class="col-10 mx-auto">
+                            <div class="table-responsive-sm">
+                                <table class="table">
+                                    <caption>Управление потоком вычислений
+                                        <img src="img/logoBoot.png" alt="Bootsrtap logo"
+                                            class="figure-img img-fluid little-size">
+                                        Bootstrap
+                                    </caption>
+                                    <thead>
+                                        <tr>
+                                            <th class="col-4">Возможность</th>
+                                            <th class="col-1">Java</th>
+                                            <th class="col-1">C#</th>
+                                            <th class="col-1">C</th>
+                                            <th class="col-1">Python</th>
+                                            <th class="col-1">Haskell</th>
+                                            <th class="col-1">PHP</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="col-4 table-primary">Поддержка try/catch</td>
+                                            <td class="col-1 table-primary">+</td>
+                                            <td class="col-1 table-primary">+</td>
+                                            <td class="col-1 table-primary">-</td>
+                                            <td class="col-1 table-primary">+</td>
+                                            <td class="col-1 table-primary">+</td>
+                                            <td class="col-1 table-primary">+</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-4">Блок else</td>
+                                            <td class="col-1">-</td>
+                                            <td class="col-1">+</td>
+                                            <td class="col-1">-</td>
+                                            <td class="col-1">+</td>
+                                            <td class="col-1">+</td>
+                                            <td class="col-1">-</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-4 table-success">Блок finally</td>
+                                            <td class="col-1 table-success">+</td>
+                                            <td class="col-1 table-success">+</td>
+                                            <td class="col-1 table-success">-</td>
+                                            <td class="col-1 table-success">+</td>
+                                            <td class="col-1 table-success">+</td>
+                                            <td class="col-1 table-success">+</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-4">Перезапуски</td>
+                                            <td class="col-1">-</td>
+                                            <td class="col-1">?</td>
+                                            <td class="col-1">-</td>
+                                            <td class="col-1">?</td>
+                                            <td class="col-1">?</td>
+                                            <td class="col-1">?</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-4 table-danger">Поддержка try/catch</td>
+                                            <td class="col-1 table-danger">+</td>
+                                            <td class="col-1 table-danger">+</td>
+                                            <td class="col-1 table-danger">-</td>
+                                            <td class="col-1 table-danger">+</td>
+                                            <td class="col-1 table-danger">+</td>
+                                            <td class="col-1 table-danger">+</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-4">Блок else</td>
+                                            <td class="col-1">-</td>
+                                            <td class="col-1">+</td>
+                                            <td class="col-1">+</td>
+                                            <td class="col-1">+</td>
+                                            <td class="col-1">+</td>
+                                            <td class="col-1">+</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-4 table-warning">Блок finally</td>
+                                            <td class="col-1 table-warning">+</td>
+                                            <td class="col-1 table-warning">+</td>
+                                            <td class="col-1 table-warning">+</td>
+                                            <td class="col-1 table-warning">+</td>
+                                            <td class="col-1 table-warning">+</td>
+                                            <td class="col-1 table-warning">+</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-4">Перезапуски</td>
+                                            <td class="col-1">-</td>
+                                            <td class="col-1">?</td>
+                                            <td class="col-1">?</td>
+                                            <td class="col-1">?</td>
+                                            <td class="col-1">?</td>
+                                            <td class="col-1">?</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+   
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title m-1" id="exampleModalLabel">Авторизация на сайте</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-froup">
+                                <label for="exampleInputEmail">E-mail адрес:</label>
+                                <input type="email" class="form-control" id="exampleInputEmail"
+                                    aria-describdby="emailHelp" placeholder="Email" required>
+                                <small id="emailHelp" class="form-text text-muted">Введите ваш e-mail</small>
+                            </div>
+                            <div class="form-froup">
+                                <label for="exampleInputPass">Пароль:</label>
+                                <input type="password" class="form-control" id="exampleInputpass"
+                                    aria-describdby="passHelp" placeholder="Password" required>
+                                <small id="passHelp" class="form-text text-muted">Пароль должен содержать минимум 8
+                                    символов</small>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label py-2">
+                                    <input type="checkbox" class="form-check-input">Запомнить меня</input>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <footer>
+        <div class="container">
+
+            <div class="d-sm-flex justify-content-between">
+                <div class="footer-left">
+                    <p>Тестовий сайт 2021 год</p>
+                </div>
+                <div class="footer-right">
+                    <span>Follow</span>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script script src="js/jquery.fancybox.min.js"></script>
+
+
+
+
+</body>
+
+</html>
