@@ -4,13 +4,56 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Lab 1</title>
+    <title>Lab 2</title>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
         media="screen">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> -->
+
+    <script src="node_modules/less/dist/less.min.js"></script>
+    <script>
+        var Theme_number = 1;
+        var Default_theme = 1;
+        var Ext = "less";
+        //var Ext = "css";
+
+        function getUrl(num) {
+            return  Ext + ".style" + num + ".css";
+        }
+
+        function getThemeNumber() {
+            Theme_number = Theme_number % 2 === 0 ? 1 : 2;
+            console.log(Theme_number);
+            return Theme_number;
+        }
+
+        function initialize() {
+            var link = document.createElement("link");
+            link.setAttribute("rel", "stylesheet");
+            link.setAttribute("href", getUrl(Default_theme));
+            link.setAttribute("id", "lessCSS");
+            document.head.appendChild(link);
+        }
+
+        function initListener() {
+            document
+                .querySelector(".mynav__theme")
+                .addEventListener("click", changeTheme);
+        }
+
+        function changeTheme() {
+            document.head
+                .querySelector("#lessCSS")
+                .setAttribute("href", getUrl(getThemeNumber()));
+        }
+
+        initialize();
+
+        window.addEventListener("load", initListener);
+    </script>
+
 </head>
 
 <body>
@@ -44,6 +87,10 @@
                             <a class="nav-link text-light" id="contacts-tab" data-toggle="tab" href="#contacts"
                                 role="tab" aria-controls="contacts" aria-selected="false">&#9830Контакты</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" id="less-tab" data-toggle="tab" href="#less" role="tab"
+                                aria-controls="less" aria-selected="false">LESS</a>
+                        </li>
                     </ul>
 
                     <ul class="nav  ml-auto">
@@ -56,6 +103,7 @@
             </nav>
         </div>
     </header>
+
     <div class="container">
         <div class="tab-content">
             <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -176,11 +224,13 @@
                                 <img class="d-block w-100" src="img/a3.jpg" alt="Третий слайд">
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
@@ -200,37 +250,37 @@
                                 <img src="img/a2.jpg" class="zoom img-fluid" alt="">
                             </a>
                         </div>
-            
+
                         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                             <a href="img/a3.jpg" class="fancybox" rel="ligthbox">
                                 <img src="img/a3.jpg" class="zoom img-fluid " alt="">
                             </a>
                         </div>
-            
+
                         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                             <a href="img/a4.jpg" class="fancybox" rel="ligthbox">
                                 <img src="img/a4.jpg" class="zoom img-fluid " alt="">
                             </a>
                         </div>
-            
+
                         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                             <a href="img/a5.jpg" class="fancybox" rel="ligthbox">
                                 <img src="img/a5.jpg" class="zoom img-fluid " alt="">
                             </a>
                         </div>
-            
+
                         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                             <a href="img/a6.jpg" class="fancybox" rel="ligthbox">
                                 <img src="img/a6.jpg" class="zoom img-fluid " alt="">
                             </a>
                         </div>
-            
+
                         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                             <a href="img/a7.jpg" class="fancybox" rel="ligthbox">
                                 <img src="img/a7.jpg" class="zoom img-fluid " alt="">
                             </a>
                         </div>
-            
+
                         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                             <a href="img/a8.jpg" class="fancybox" rel="ligthbox">
                                 <img src="img/a8.jpg" class="zoom img-fluid " alt="">
@@ -238,8 +288,8 @@
                         </div>
                     </div>
                 </div>
-                
-                
+
+
             </div>
             <div class="tab-pane active" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
                 <div class="page-top">
@@ -464,6 +514,85 @@
                     </div>
                 </div>
             </div>
+            <div class="tab-pane" id="less" role="tabpanel" aria-labelledby="less-tab">
+                <div class="wrapper container page-top">
+                    <nav class="mynav">
+                        <button class="mynav__theme">Change theme</button>
+                        <ul class="mynav__menu">
+                            <li class="mynav__item"><a href="#" class="mynav__link">Home</a></li>
+                            <li class="mynav__item"><a href="#" class="mynav__link">About</a></li>
+                            <li class="mynav__item"><a href="#" class="mynav__link">Items</a></li>
+                            <li class="mynav__item"><a href="#" class="mynav__link">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <section class="main">
+                        <div class="main__content">
+                            <div class="main__tile--danger">
+                                <div class="main__header">Product 1</div>
+                                <ul class="main__features">
+                                    <li class="main__item">Feature 1<span class="main__plus">+</span></li>
+                                    <li class="main__item">Feature 2<span class="main__plus">+</span></li>
+                                    <li class="main__item">Feature 3<span class="main__plus">+</span></li>
+                                    <li class="main__item">Feature 4</li>
+                                    <li class="main__item">Feature 5</li>
+                                </ul>
+
+                                <div class="main__footer">
+                                    <button class="main__button main__button--danger">Click on me!</button>
+                                </div>
+                            </div>
+
+                            <div class="main__tile main__tile--warning">
+                                <div class="main__header">Product 2</div>
+                                <ul class="main__features">
+                                    <li class="main__item">Feature 1<span class="main__plus">+</span></li>
+                                    <li class="main__item">Feature 2</li>
+                                    <li class="main__item">Feature 3<span class="main__plus">+</span></li>
+                                    <li class="main__item">Feature 4<span class="main__plus">+</span></li>
+                                    <li class="main__item">Feature 5</li>
+                                </ul>
+
+                                <div class="main__footer">
+                                    <button class="main__button main__button--warning">Click on me!</button>
+                                </div>
+                            </div>
+
+                            <div class="main__tile main__tile--primary">
+                                <div class="main__header">Product 3</div>
+                                <ul class="main__features">
+                                    <li class="main__item">Feature 1</li>
+                                    <li class="main__item">Feature 2<span class="main__plus">+</span></li>
+                                    <li class="main__item">Feature 3<span class="main__plus">+</span></li>
+                                    <li class="main__item">Feature 4<span class="main__plus">+</span></li>
+                                    <li class="main__item">Feature 5</li>
+                                </ul>
+
+                                <div class="main__footer">
+                                    <button class="main__button main__button--primary">Customized Button!</button>
+                                </div>
+                            </div>
+
+                            <div class="main__tile main__tile--success">
+                                <div class="main__header">Product 4</div>
+                                <ul class="main__features">
+                                    <li class="main__item">Feature 1<span class="main__plus">+</span></li>
+                                    <li class="main__item">Feature 2</li>
+                                    <li class="main__item">Feature 3</li>
+                                    <li class="main__item">Feature 4<span class="main__plus">+</span></li>
+                                    <li class="main__item">Feature 5<span class="main__plus">+</span></li>
+                                </ul>
+
+                                <div class="main__footer">
+                                    <button class="main__button main__button--success">Click on me!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+
         </div>
 
 
@@ -472,7 +601,7 @@
 
     </div>
 
-   
+
 
 
 
